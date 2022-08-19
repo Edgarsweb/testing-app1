@@ -12,7 +12,7 @@ function ScreenShot() {
 
   return (
     <div className='container'>
-      <p>{status}</p>
+      {/* <p>{status}</p> */}
       <h2>Try Me</h2>
       <video className='videoContainer' src={mediaBlobUrl} controls autoPlay loop /> 
       <PlayCircleFilled  className='playCircle' onClick={startRecording} /> 
