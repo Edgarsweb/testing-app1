@@ -1,0 +1,40 @@
+.container {
+    
+}
+
+
+.startRecBtn {
+    /* padding: 15px 30px; */
+    margin: 0px 5px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    background-color: #ff9f1c;
+    color: #293241;
+    letter-spacing: 1px;
+}
+
+.stopRecBtn {
+    /* padding: 15px 30px;s */
+    margin: 0px 5px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    background-color: #293241;
+    color: #ff9f1c;
+    letter-spacing: 1px;
+}
+
+.videoContainer {
+    display: block;
+    margin: 50px auto;
+}
+
+.playCircle {
+    font-size: 40px;
+    padding: 10px;
+    background-color: #ff9f1c;
+    color: #293241;
+    border-radius: 50px;
+    margin: 40px 10px;
+}

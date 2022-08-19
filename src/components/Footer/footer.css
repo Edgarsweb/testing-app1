@@ -1,0 +1,23 @@
+
+.foot {
+  background-color: #cbf3f0;
+  color: #284b63;
+  font-size: 12px;
+  padding: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+  
+  .foot a {
+    color: #000;
+}
+
+  .socialIcon {
+    font-size: 25px;
+    color: #284b63;
+    margin: 0 5px;
+}
+
+.socialIcon:hover {
+  opacity: 0.5;
+}

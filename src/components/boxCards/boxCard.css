@@ -1,0 +1,14 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.cardContainer p {
+    text-align: left;
+}
+
+.userIcon, .videoIcon, .likeIcon {
+    font-size: 35px;
+    color: #2ec4b6;
+}
