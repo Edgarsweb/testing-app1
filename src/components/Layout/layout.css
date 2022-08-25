@@ -8,3 +8,11 @@
     color: #293241;
     letter-spacing: 1px;
 }
+
+.buyCoffee {
+    cursor: pointer;
+}
+
+.buyCoffee:hover {
+    opacity: 0.8;
+}

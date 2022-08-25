@@ -24,16 +24,16 @@ function Layout() {
 
       <img src={happyClients} alt="" />
       <BoxCard />
-      <hr style={{maxWidth: 600}}/>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod explicabo dolor modi nihil nostrum laborum, quibusdam reprehenderit quia tempore tenetur nisi. Placeat adipisci repellat blanditiis facere sit qui sequi?</p>
+      {/* <hr style={{maxWidth: 600}}/> */}
+      {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod explicabo dolor modi nihil nostrum laborum, quibusdam reprehenderit quia tempore tenetur nisi. Placeat adipisci repellat blanditiis facere sit qui sequi?</p> */}
       <hr style={{maxWidth: 600}}/>
 
       <div className='review'>
-        <q> <i>This is the coolest and most simple screen recirder I have tested.</i>  </q>
+        <q> <i>This is the coolest and most simple screen recorder I have tested.</i>  </q>
         <p style={{fontSize: 12}}>Jonathan Brandon, CEO of Think2ce</p>
       </div>
 
-      <a href=""><button className='donateButton'>Donate</button></a>
+      <a href="https://www.buymeacoffee.com/edx126" target={"blank"} className="buyCoffee"><button className='donateButton'>Buy me a coffee</button></a>
 
       <Footer />
     </div>
