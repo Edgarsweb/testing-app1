@@ -17,7 +17,7 @@ function ScreenShot() {
       <video className='videoContainer' src={mediaBlobUrl} controls autoPlay loop /> 
       <PlayCircleFilled  className='playCircle' onClick={startRecording} /> 
       <MinusCircleFilled className='playCircle' onClick={stopRecording} /> 
-      {/* <button className="stopRecBtn" onClick={stopRecording}>Stop Rec</button>   */}
+
       
     </div>
   );
