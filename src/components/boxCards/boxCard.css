@@ -12,3 +12,16 @@
     font-size: 35px;
     color: #2ec4b6;
 }
+
+@media only screen and (max-width: 600px) {
+    .cardContainer {
+        flex-direction: column;
+        justify-content: center;
+        /* margin: auto; */
+    }
+
+    .cardContainer {
+       
+        margin: 10px;
+    }
+  }

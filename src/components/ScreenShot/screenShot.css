@@ -38,3 +38,8 @@
     border-radius: 50px;
     margin: 40px 10px;
 }
+
+.videoBox {
+    max-width: 600px;
+    /* margin: auto; */
+}

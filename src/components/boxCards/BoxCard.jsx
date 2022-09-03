@@ -13,7 +13,7 @@ function BoxCard() {
     >
         <TeamOutlined className='userIcon'/>
         <h5>999+ Users</h5>
-      <p>There are currently over 999 users worldwide who love "Screenit" app. In fact, according to the latest worldwide statistics, about 2 percent of office workers use screen-recorders regularly.</p>
+      <p>There are currently over 999 users worldwide who loves <b>Screenit app</b> . In fact, according to the latest worldwide statistics, about 2 percent of office workers use screen-recorders regularly.</p>
    
     </Card>
 
@@ -24,7 +24,7 @@ function BoxCard() {
       }}
     ><VideoCameraOutlined className='videoIcon'/>
     <h5>High-quality recorder</h5>
-      <p>While recording a video of yourself, or the screen of your PC, you can feel the high quality and speed</p>
+      <p>While recording a video of yourself, or the screen of your PC, you can feel the high quality and speed. <b>Screenit app</b> is a great helper tool in your projects</p>
       
     </Card>
 
@@ -35,7 +35,7 @@ function BoxCard() {
       }}
     ><LikeOutlined className='likeIcon'/>
     <h5>Absolutely free tool</h5>
-      <p> "Screenit" app is absolutely Free tool and you can use it as much as you want. It will help you in managing your tasks easier and faster.</p>
+      <p> <b>Screenit app</b>  is absolutely Free tool and you can use it as much as you want. It will help you in managing your tasks easier and faster.</p>
      
     </Card>
     </div>

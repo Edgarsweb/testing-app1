@@ -3,17 +3,20 @@ import './screenShot.css'
 import { useReactMediaRecorder } from "react-media-recorder";
 
 
-// import { BsStopBtn, BsCollectionPlayFill } from 'react-icons/fa';
-// import { PlayCircleFilled, MinusCircleFilled} from '@ant-design/icons';
+import { BsStopBtn, BsCollectionPlayFill } from 'react-icons/fa';
+import { PlayCircleFilled, MinusCircleFilled} from '@ant-design/icons';
 
 
 
   const start = async () => {
 	const stream = await navigator.mediaDevices.getDisplayMedia(
+    
+    
 	  {
 	  video:{
 		mediaSource: "screen",
-	  }
+	  },
+    
 	});
 
 	const data=[];
@@ -44,9 +47,12 @@ function ScreenShot() {
 
   return (
     <div className='container'>
-    
-      <video width="600" height="300" controls>Play</video>
-      <button onClick={start}>Start rec</button>
+      <div className='videoBox'>
+        <video  controls>Play</video>
+      </div>
+      <PlayCircleFilled className='playCircle' onClick={start} />
+      {/* <button  onClick={start}>Start rec</button>
+      <button onClick={start}>Start rec</button> */}
 
       
     </div>
