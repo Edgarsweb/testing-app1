@@ -4,19 +4,49 @@ import { useReactMediaRecorder } from "react-media-recorder";
 
 
 // import { BsStopBtn, BsCollectionPlayFill } from 'react-icons/fa';
-import { PlayCircleFilled, MinusCircleFilled} from '@ant-design/icons';
+// import { PlayCircleFilled, MinusCircleFilled} from '@ant-design/icons';
+
+
+
+  const start = async () => {
+	const stream = await navigator.mediaDevices.getDisplayMedia(
+	  {
+	  video:{
+		mediaSource: "screen",
+	  }
+	});
+
+	const data=[];
+  const mediaRecorder=new MediaRecorder(stream);
+
+  mediaRecorder.ondataavailable=(e)=>{
+	data.push(e.data);
+  };
+
+  mediaRecorder.start();
+  mediaRecorder.onstop=(e)=>{
+	
+	document.querySelector("video").src=URL.createObjectURL(
+	  new Blob(data,{
+		type:data[0].type,
+	  })
+	);
+  };
+  };
+
+ 
+
+
 
 function ScreenShot() {
-    const { status, startRecording, stopRecording, mediaBlobUrl } =
-    useReactMediaRecorder({ screen: true, video: true });
+//     const { status, startRecording, stopRecording, mediaBlobUrl } =
+//     useReactMediaRecorder({ screen: true, video: true });
 
   return (
     <div className='container'>
-      {/* <p>{status}</p> */}
-      <h2>Try Me</h2>
-      <video className='videoContainer' src={mediaBlobUrl} controls autoPlay loop /> 
-      <PlayCircleFilled  className='playCircle' onClick={startRecording} /> 
-      <MinusCircleFilled className='playCircle' onClick={stopRecording} /> 
+    
+      <video width="600" height="300" controls>Play</video>
+      <button onClick={start}>Start rec</button>
 
       
     </div>
