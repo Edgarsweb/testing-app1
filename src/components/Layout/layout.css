@@ -21,22 +21,24 @@
 
 .firstImage{
     max-width: 600px;
-    /* margin: auto; */
+    margin: auto;
     
 }
 
 .firstImage img{
     width: 100%;
+    border-radius: 20px;
     
 }
 
 .secondImage{
     max-width: 600px;
-    /* margin: auto; */
+    margin: auto;
 }
 
 .secondImage img{
     width: 100%;
+    border-radius: 20px;
 
 }
 
@@ -53,7 +55,7 @@
     }
 
     .mainDiv {
-        max-width: 1290px;
+        
         margin: 50px 10px;
         
     }

@@ -1,6 +1,6 @@
 .cardContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 50px;
 }
 
@@ -13,7 +13,7 @@
     color: #2ec4b6;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1260px) {
     .cardContainer {
         flex-direction: column;
         justify-content: center;

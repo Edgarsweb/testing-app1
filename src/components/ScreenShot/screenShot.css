@@ -26,6 +26,14 @@
 .videoContainer {
     display: block;
     margin: 120px 20px auto;
+    max-width: 600px;
+    margin: auto;
+}
+
+.videoContainer video{
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
 }
 
 .playCircle {

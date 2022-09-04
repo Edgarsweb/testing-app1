@@ -21,8 +21,8 @@ function ScreenShot() {
       {
       video:{
       mediaSource: "screen",
-      width: 1200,
-      height: 800,
+      // width: 1200,
+      // height: 800,
       
       }
     });
