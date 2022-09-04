@@ -6,7 +6,7 @@ import { TeamOutlined, VideoCameraOutlined, LikeOutlined } from '@ant-design/ico
 function BoxCard() {
   return (
     <div className='cardContainer'>
-        <Card 
+        <Card className='cards'
         style={{
         width: 300, 
       }}
@@ -17,10 +17,10 @@ function BoxCard() {
    
     </Card>
 
-    <Card
+    <Card className='cards'
       
         style={{
-        width: 300,marginLeft: 20
+        width: 300,
       }}
     ><VideoCameraOutlined className='videoIcon'/>
     <h5>High-quality recorder</h5>
@@ -28,10 +28,10 @@ function BoxCard() {
       
     </Card>
 
-    <Card
+    <Card className='cards'
       
         style={{
-        width: 300,marginLeft: 20
+        width: 300,
       }}
     ><LikeOutlined className='likeIcon'/>
     <h5>Absolutely free tool</h5>

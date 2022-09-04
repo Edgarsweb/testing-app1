@@ -1,6 +1,7 @@
 import React from 'react';
 import './screenShot.css'
-import { useReactMediaRecorder } from "react-media-recorder";
+// 
+
 
 
 import { BsStopBtn, BsCollectionPlayFill } from 'react-icons/fa';
@@ -8,51 +9,50 @@ import { PlayCircleFilled, MinusCircleFilled} from '@ant-design/icons';
 
 
 
-  const start = async () => {
-	const stream = await navigator.mediaDevices.getDisplayMedia(
-    
-    
-	  {
-	  video:{
-		mediaSource: "screen",
-	  },
-    
-	});
 
-	const data=[];
-  const mediaRecorder=new MediaRecorder(stream);
-
-  mediaRecorder.ondataavailable=(e)=>{
-	data.push(e.data);
-  };
-
-  mediaRecorder.start();
-  mediaRecorder.onstop=(e)=>{
-	
-	document.querySelector("video").src=URL.createObjectURL(
-	  new Blob(data,{
-		type:data[0].type,
-	  })
-	);
-  };
-  };
 
  
 
 
 
 function ScreenShot() {
-//     const { status, startRecording, stopRecording, mediaBlobUrl } =
-//     useReactMediaRecorder({ screen: true, video: true });
+  const start = async () => {
+    const stream = await navigator.mediaDevices.getDisplayMedia(
+      {
+      video:{
+      mediaSource: "screen",
+      width: 1200,
+      height: 800,
+      
+      }
+    });
+  
+    const data=[];
+    const mediaRecorder=new MediaRecorder(stream);
+  
+    mediaRecorder.ondataavailable=(e)=>{
+    data.push(e.data);
+    };
+  
+    mediaRecorder.start();
+     mediaRecorder.onstop=(e)=>{
+    
+    document.querySelector("video").src=URL.createObjectURL(
+      new Blob(data,{
+      type:data[0].type,
+      })
+    );
+    };
+    };
 
   return (
     <div className='container'>
-      <div className='videoBox'>
-        <video  controls>Play</video>
+      <div className='videoContainer '>
+        <video controls>Play</video>
       </div>
-      <PlayCircleFilled className='playCircle' onClick={start} />
-      {/* <button  onClick={start}>Start rec</button>
-      <button onClick={start}>Start rec</button> */}
+      <PlayCircleFilled onClick={start} className="playCircle"/>
+      <MinusCircleFilled className="stopRecBtn" />
+
 
       
     </div>

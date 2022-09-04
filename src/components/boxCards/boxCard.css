@@ -17,11 +17,10 @@
     .cardContainer {
         flex-direction: column;
         justify-content: center;
-        /* margin: auto; */
+        margin: 0 auto;
+    }
+    .cards {
+        margin: auto;
     }
 
-    .cardContainer {
-       
-        margin: 10px;
-    }
   }
