@@ -48,7 +48,7 @@ function ScreenShot() {
   return (
     <div className='container'>
       <div className='videoContainer '>
-        <video controls>Play</video>
+        <video controls audio>Play</video>
       </div>
       <PlayCircleFilled onClick={start} className="playCircle"/>
       <MinusCircleFilled className="stopRecBtn" />

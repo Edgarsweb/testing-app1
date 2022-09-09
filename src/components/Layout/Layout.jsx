@@ -31,8 +31,8 @@ function Layout() {
       </div>
       
       <BoxCard />
-      <hr style={{maxWidth: 600}}/>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod explicabo dolor modi nihil nostrum laborum, quibusdam reprehenderit quia tempore tenetur nisi. Placeat adipisci repellat blanditiis facere sit qui sequi?</p>
+      {/* <hr style={{maxWidth: 600}}/>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod explicabo dolor modi nihil nostrum laborum, quibusdam reprehenderit quia tempore tenetur nisi. Placeat adipisci repellat blanditiis facere sit qui sequi?</p> */}
       <hr style={{maxWidth: 600}}/>
 
       <div className='review'>
